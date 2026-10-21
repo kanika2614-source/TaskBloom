@@ -16,7 +16,6 @@ export function completeTask(tasks, id) {
 export function filterByStatus(tasks, status) {
     return tasks.filter(task => task.status === status);
 }
-// Extra operation required by the assignment
 export function advanceTask(tasks, id) {
     return tasks.map(task => {
         if (task.id !== id) {

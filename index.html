@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskBloom | Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>🌱 TaskBloom</h1>
+      <p>Small steps, big progress.</p>
+    </header>
+
+    <form id="task-form">
+      <input
+        type="text"
+        id="title"
+        placeholder="What do you need to do?"
+        required
+      >
+      <button type="submit">Add task</button>
+    </form>
+
+    <nav class="filters" aria-label="Filter tasks">
+      <button type="button" data-filter="all">All</button>
+      <button type="button" data-filter="todo">To do</button>
+      <button type="button" data-filter="in-progress">In progress</button>
+      <button type="button" data-filter="done">Done</button>
+    </nav>
+
+    <ul id="task-list"></ul>
+    <p id="message" aria-live="polite"></p>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
